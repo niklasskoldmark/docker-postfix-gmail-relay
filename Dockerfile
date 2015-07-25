@@ -20,6 +20,6 @@ RUN cat /etc/ssl/certs/Equifax_Secure_CA.pem >> /etc/postfix/cacert.pem && \
 
 #CMD /srv/setup.sh && rm /srv/setup.sh
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/srv/entrypoint.sh"]
 
 EXPOSE 25
